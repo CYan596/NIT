@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    text-decoration:none;
+}
+
+body{
+    background-color: #ebf2ff;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+
+}
+.header a{
+    text-decoration:none;
+    color:rgb(222, 232, 247);
+    font-family:Microsoft YaHei;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+}
+.header a:hover{
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001e3c;
+    width: 100%;
+    height: 123px;
+
+    /*box-shadow: 0 3px 3px black;*/
+}
+.header-introduce{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 435px;
+}
+.header-introduce p{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 25px;
+    color:rgb(222, 232, 247);
+}
+
+
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 2400px;
+    margin: 65px auto;
+
+}
+.article-block{
+
+    height: 560px;
+    width: 360px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 15px -5px #000000;
+
+}
+
+.article-block-top{
+    padding-top: 24px;
+    width: 336px;
+    height: 56px;
+}
+.article-block-ornament{
+    float: left;
+    height: 42px;
+    width: 12px;
+    margin: 7px 28px 7px 0px;
+    background-color: #26408F;
+}
+.article-block-top-title{
+    height: 22px;
+    padding: 16px 0;
+}
+
+.article-block-content{
+
+    width: 360px;
+    height: 380px;
+    padding: 0 40px;
+}
+.article-news{
+    position: relative;
+    height: 65px;
+    width: 280px;
+    margin-top:20px ;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: #666666;
+    /*background-color: #cccccc;*/
+
+}
+
+.article-news a{
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    color: #444;
+    font-weight: 300 ;
+    vertical-align: bottom;
+
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    color: #444;
+    text-decoration:none;
+}
+
+.article-news-2{
+    height: 87px;
+    width: 280px;
+}
+
+.article-block-footer{
+    padding: 10px 0 0 270px;
+    width: 60px;
+    height: 40px;
+    /*background-color: #00aeef;*/
+}
+
+.article-block-footer a{
+    bottom: 6px;
+    color: #666666;
+    font-weight: 300 ;
+}
+a:hover{
+    font-weight: bolder;
+    text-decoration:none;
+}
+.inform a:hover{
+    font-weight: normal;
+    cursor: auto;
+}
