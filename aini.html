@@ -13,6 +13,21 @@
             font: bold 44px/46px "Yu Gothic";
             color: #000000;
         }
+        .alert{
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 90%;
+            height: 80%;
+            margin-left: 50%;
+            transform: translate(-50%,0);
+            font: bold 40px/46px "Yu Gothic";;
+            background-color: #cccccc;
+            border-radius: 3%;
+            box-shadow: 0 0 15px -5px #000000;
+            opacity: 0.9;
+        }
         .content{
             display: flex;
             flex-direction: column;
@@ -57,10 +72,15 @@
             border-radius: 5%;
             box-shadow: 0 0 10px -5px #000000;
         }
-
+        .clear{
+            display: flex;
+        }
     </style>
 </head>
 <body>
+    <div class="alert">
+        提交成功
+    </div>
     <div class="content">
         <p>做我女朋友可好</p>
         <div class="box">
@@ -77,6 +97,7 @@
         var right=document.getElementsByClassName("right")[0];
         var falseSelect=document.getElementsByClassName("false")[0];
         var button1=document.getElementsByTagName("button")[0];
+        var alert=document.getElementsByClassName("alert")[0];
 
         select[0].display=false;
         select[1].display=false;
@@ -134,7 +155,10 @@
 
         button1.onclick=function () {
             button1.style.backgroundColor="RGB(52,152,219)";
-            alert("提交成功");
+            if(select[1].display||select[0].display){
+                alert.className="alert clear"
+            }
+
         }
 
     </script>
