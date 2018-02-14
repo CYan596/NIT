@@ -18,15 +18,32 @@
             justify-content: center;
             align-items: center;
             position: absolute;
-            width: 90%;
-            height: 80%;
+            width: 100%;
+            height: 40%;
             margin-left: 50%;
-            transform: translate(-50%,0);
-            font: bold 40px/46px "Yu Gothic";;
+            margin-top: 50%;
+            transform: translate(-50%,-120%);
+            font: bold 52px/52px "微软雅黑";
             background-color: #cccccc;
             border-radius: 3%;
             box-shadow: 0 0 15px -5px #000000;
-            opacity: 0.9;
+            opacity: 1;
+        }
+        .warning{
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            height: 40%;
+            margin-left: 50%;
+            margin-top: 50%;
+            transform: translate(-50%,-120%);
+            font: bold 52px/52px "微软雅黑";
+            background-color: #cccccc;
+            border-radius: 3%;
+            box-shadow: 0 0 15px -5px #000000;
+            opacity: 1;
         }
         .content{
             display: flex;
@@ -79,7 +96,10 @@
 </head>
 <body>
     <div class="alert">
-        提交成功
+        获得男朋友一只
+    </div>
+    <div class="warning">
+        请选择
     </div>
     <div class="content">
         <p>做我女朋友可好</p>
@@ -98,6 +118,7 @@
         var falseSelect=document.getElementsByClassName("false")[0];
         var button1=document.getElementsByTagName("button")[0];
         var alert=document.getElementsByClassName("alert")[0];
+        var warning=document.getElementsByClassName("warning")[0];
 
         select[0].display=false;
         select[1].display=false;
@@ -154,11 +175,21 @@
         }
 
         button1.onclick=function () {
-            button1.style.backgroundColor="RGB(52,152,219)";
+            // button1.style.backgroundColor="RGB(52,152,219)";
             if(select[1].display||select[0].display){
-                alert.className="alert clear"
+                var timer=setTimeout(function (args) {
+                    alert.className="alert clear"
+                },300)
+            }else{
+                var timer=setTimeout(function (args) {
+                    warning.className="warning clear"
+                },300)
             }
 
+        }
+
+        warning.onclick=function () {
+            warning.className="warning"
         }
 
     </script>
