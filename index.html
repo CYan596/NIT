@@ -1,264 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>属于大家的学习社区</title>
-    <!--<link rel="stylesheet" href="css/resetcss.css">-->
-    <link rel="stylesheet" href="material/font-awesome/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="images/code.png" type="image/x-icon">
-    <!--<link rel="stylesheet" media="screen and (max-width:600px)" href="css/indexSmall.css" type="text/css" />-->
-    <link rel="stylesheet" href="css/indexNormal.css" type="text/css" />
+<html lang="zh-CN">
+  <head>
+    <!-- 头部配置 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>CYan | 资源导航</title>
 
-</head>
-<body>
-    <div class="header-wrap">
-        <div class="header">
-            <div class="header-introduce">
-                <p>New Coder</p>
-            </div>
+    <!-- 引入Bootstrap核心样式表文件 -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv/html5shiv.js"></script>
+      <script src="lib/respond/respond.src.js"></script>
+    <![endif]-->
+    <!-- /头部配置 -->
+
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <!-- <link href="css/memo.css" rel="stylesheet" type="text/css"/> -->
+  </head>
+  <body>
+  	<!-- navbar-header -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CYan</a>
         </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">主页</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#contact">联系</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+        </nav>
+    <!-- /navbar-header -->
+
+    <!-- container-top -->
+    <div class="container" id="container-top">
+      <div class="starter-template">
+        <img id="logo" class="img-responsive center-block logo" src="img/studentIcon.svg" alt="icon">
+        <h1 class="">C的资源库</h1>
+        <p class="lead">不在寻找上浪费时间。<br>高效的学习，生活，工作。</p>
+      </div>
     </div>
+    <!-- /container-top -->
 
+    <!-- container-main -->
+    <div class="container"  id="container-main">
+      <div class="wraper-container">
+      <!-- 移动模块 -->
+        <section class="visible-xs-block section-main">
+          <span class="span-image">
+            <img src="img/web-design.jpg" alt="web-design" >
+          </span>
+          <h3 class="p-section">前端</h3>
+          <h4 style="margin-top: 30px">前端教程</h4>
+          <p style="padding: 0 20px">html→css→js→jquery→...→Bootstrap→Ajax→node.js</p>
+          <p style="padding: 0 20px">一套质量较好的教程，辅以《JavaScript高级程序设计》，《css权威指南》，《css世界》等书，适合前端入门与进阶。</p>
+          <a class="btn btn-default " style="width: 60%; margin-top:30px" href="https://pan.baidu.com/s/1bqot5NL">获取</a>
 
-    <div class="content">
-        <!--前端-->
-        <div class="article-block">
-            <div class="article-block-top">
-                <div class="article-block-ornament"></div>
-                <div class="article-block-top-title"><h2>前端</h2></div>
-            </div>
-            <div class="article-block-content">
-                <div class="article-news">
-                    <a href=""><b>因为百度网盘限制，书籍资料上传在群文件，此外，绝大部分书籍可以在脚本之家免费下载。</b></a>
-                </div>
-                <div class="article-news">
-                    <a href="https://pan.baidu.com/s/1bqot5NL">传智前端基础14期（学生录屏，质量一般）</a>
-                </div>
-                <div class="article-news">
-                    <a href="https://pan.baidu.com/s/17AMkW524GFipPBB63RuHSA">传智前端1期（老师录屏，质量较好）<b>提取密码:2333</b></a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-block-footer">
-                    <!--<a href="#">更多 <span class="fa fa-angle-double-right"></span></a>-->
-                </div>
-            </div>
-        </div>
+        </section>
 
-        <!--通知-->
-        <div class="article-block inform">
-            <div class="article-block-top">
-                <div class="article-block-ornament" style="background-color: #cccccc"></div>
-                <div class="article-block-top-title"><h2>社区通知</h2></div>
-            </div>
-            <div class="article-block-content">
-                <div class="article-news">
-                    <a href="#">资源分享方式为百度云盘，链接失效请联系群主。</a>
-                </div>
-                <div class="article-news">
-                    <a href="#">自建页面，不求利益，页面粗糙，还望谅解。想要获得或共享资源，提出改善意见。请联系社区群群主[柔情]。</a>
-                </div>
-                <div class="article-news">
-                    <!--<a href="#">版本：Beta V1.0<br>更新日志（2018-1-30）： 页面建设，添加了前端相关资料。</a>-->
-                    <!--<a href="#">版本：Beta V1.1<br>更新日志（2018-2-1）： 页面建设，添加了Python,java等资料。</a>-->
-                    <!--<a href="#">版本：Beta V1.2<br>更新日志（2018-2-14）： 页面维护</a>-->
-                    <!--<a href="#">版本：Beta V1.3<br>更新日志（2018-2-27）： 新增-网络攻防</a>-->
-                    <!-- <a href="#">版本：Beta V1.4<br>更新日志（2018-03-03）： 新增-资源网站，（预计4月份进行重写、建站、实现响应式）</a> -->
-                     <a href="#">版本：Beta V1.5<br>更新日志（2018-3-13）： 新增部分资源，（预计4月份进行重写、建站、实现响应式）</a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-block-footer">
-                    <!--<a href="#">更多 <span class="fa fa-angle-double-right"></span></a>-->
-                </div>
-            </div>
-        </div>
+        <section class="visible-xs-block section-main">
+          <span class="span-image">
+            <img src="img/python.jpg" alt="web-design" >
+          </span>
+          <h3 class="p-section">Python</h3>
+          <h4 style="margin-top: 30px">python教程整合</h4>
+          <p style="margin-top: 30px; padding: 0 20px">Python基础→进阶→项目→数据分析→数学基础→算法→深度学习→机器学习→数据挖掘→...→量化交易→NLP→计算机视觉→Kaggle</p>
+          <p style="padding: 0 20px"></p>
+          <a class="btn btn-default " style="width: 60%; margin-top:30px" href="https://pan.baidu.com/s/1mjwjare">获取</a>
 
-        <!--人工智能-->
-        <div class="article-block">
-            <div class="article-block-top">
-                <div class="article-block-ornament"></div>
-                <div class="article-block-top-title"><h2>Python/人工智能</h2></div>
-            </div>
-            <div class="article-block-content">
-                <div class="article-news">
-                    <a href="https://pan.baidu.com/s/1mjwjare">Python基础全套视频</a>
-                </div>
-                <div class="article-news">
-                    <a href=""></a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-block-footer">
-                    <!--<a href="#">更多 <span class="fa fa-angle-double-right"></span></a>-->
-                </div>
-            </div>
-        </div>
+        </section>
 
-        <!--java-->
-        <div class="article-block">
-            <div class="article-block-top">
-                <div class="article-block-ornament"></div>
-                <div class="article-block-top-title"><h2>Java</h2></div>
-            </div>
-            <div class="article-block-content">
-                <div class="article-news">
-                    <a href="https://pan.baidu.com/s/1pNj1UbT">Java基础（刘意）</a>
-                </div>
-                <div class="article-news">
-                    <a href="https://pan.baidu.com/s/1xaxo_MgQZMcLn8kr5_sPsQ">java相关实战项目：（点餐系统、网上商城等）  <b>提取密码:2333</b></a>
-                </div>
-                <div class="article-news">
-                    <a href="https://pan.baidu.com/s/1h5m7vPYdWxMy_4MgRKU3hA">传智播客35期基础班+就业班  <b>提取密码:2333</b></a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-block-footer">
-                    <!--<a href="#">更多 <span class="fa fa-angle-double-right"></span></a>-->
-                </div>
-            </div>
-        </div>
+        <section class="visible-xs-block section-main">
+          <span class="span-image">
+            <img src="img/java.jpg" alt="web-design" >
+          </span>
+          <h3 class="p-section">Java</h3>
+          <h4 style="margin-top: 30px">传智播客 Java教程 整合</h4>
+          <p style="margin-top: 30px; padding: 0 20px">Java SE→tomcat→servlet→jsp→数据库→...→spring→实战</p>
+          <p style="padding: 0 20px"></p>
+          <a class="btn btn-default " style="width: 60%; margin-top:30px" href="https://pan.baidu.com/s/1hYYc5hLHn_IM6U9JTvOboA">获取</a>
 
+        </section>
 
-        <!--汇编-->
-        <div class="article-block">
-            <div class="article-block-top">
-                <div class="article-block-ornament"></div>
-                <div class="article-block-top-title"><h2>汇编</h2></div>
-            </div>
-            <div class="article-block-content">
-                <div class="article-news">
-                    <a href="https://pan.baidu.com/s/1bqMjN7T">汇编语言视频教程</a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-block-footer">
-                    <!--<a href="#">更多 <span class="fa fa-angle-double-right"></span></a>-->
-                </div>
-            </div>
-        </div>
+         <section class="visible-xs-block section-main">
+          <span class="span-image">
+            <img src="img/ui.jpg" alt="web-design" >
+          </span>
+          <h3 class="p-section">UI设计</h3>
+          <h4 style="margin-top: 30px">UI教程 整合</h4>
+          <p style="margin-top: 30px; padding: 0 20px">PS基础→AI→平面实战→实用美术→电商设计→网页设计→UI设计→实战</p>
+          <p style="padding: 0 20px"></p>
+          <a class="btn btn-default " style="width: 60%; margin-top:30px" href="https://pan.baidu.com/s/1ht2wPl6">获取</a>
 
-        <!--设计-->
-        <div class="article-block">
-            <div class="article-block-top">
-                <div class="article-block-ornament"></div>
-                <div class="article-block-top-title"><h2>设计</h2></div>
-            </div>
-            <div class="article-block-content">
-                <div class="article-news">
-                    <a href="https://pan.baidu.com/s/1ht2wPl6">Photoshop/Ai/平面设计等全套</a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-block-footer">
-                    <!--<a href="#">更多 <span class="fa fa-angle-double-right"></span></a>-->
-                </div>
-            </div>
-        </div>
-
-        <!--PHP-->
-        <div class="article-block">
-            <div class="article-block-top">
-                <div class="article-block-ornament"></div>
-                <div class="article-block-top-title"><h2>PHP</h2></div>
-            </div>
-            <div class="article-block-content">
-                <div class="article-news">
-                    <a href="https://pan.baidu.com/s/1JTjbKipaYv3PWzpbHFKVlw">传智PHP35期 <b>提取密码:2333</b></a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-block-footer">
-                    <!--<a href="#">更多 <span class="fa fa-angle-double-right"></span></a>-->
-                </div>
-            </div>
-        </div>
-
-        <!--资源站点-->
-        <div class="article-block">
-            <div class="article-block-top">
-                <div class="article-block-ornament"></div>
-                <div class="article-block-top-title"><h2>资源站点</h2></div>
-            </div>
-            <div class="article-block-content">
-                <div class="article-news">
-                    <a href="http://www.jb51.net/books/"><b>脚本之家</b>：提供高质量计算机类电子书下载</a>
-                </div>
-                <div class="article-news">
-                    <a href="http://www.57fx.com/search/"><b>57分享</b>：百度网盘资源检索</a>
-                </div>
-                <div class="article-news">
-                    <a href="#"><b>软件安装管家（微信公众号）</b>：免费提供了各类软件安装包，如PS、DW、3dmax、maya、CAD、win10系统镜像，等等</a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-block-footer">
-                    <!--<a href="#">更多 <span class="fa fa-angle-double-right"></span></a>-->
-                </div>
-            </div>
-        </div>
-
-        <!--网络攻防-->
-        <div class="article-block">
-            <div class="article-block-top">
-                <div class="article-block-ornament"></div>
-                <div class="article-block-top-title"><h2>网络攻防</h2></div>
-            </div>
-            <div class="article-block-content">
-                <div class="article-news">
-                    <a href="https://pan.baidu.com/s/1dHaZ0Pz">2015cracer入侵 入门到精通视频教程</a>
-                </div>
-                <div class="article-news">
-                    <a href="https://pan.baidu.com/s/1pMEuyHd">网络攻防相关教程目录</a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-news">
-                    <a href="#"></a>
-                </div>
-                <div class="article-block-footer">
-                    <!--<a href="#">更多 <span class="fa fa-angle-double-right"></span></a>-->
-                </div>
-            </div>
-        </div>
+        </section>
 
         </div>
+      <!-- /移动模块 -->
 
-       <div class="footer">
-           <!-- <P>据说只要一个程序员生前兢兢业业，勤勤恳恳，死后就会进入程序员天堂，在那里会有72个新垣结衣围着他跳舞。</P> -->
-           <p>©2018 CYan,  All rights reserved.</p>
-       </div>
+      <nav class="hidden-xs" id="nav-items">
+        <ul class="">
+          <li class="nav-active"><a class="lead" href="#">前端</a></li>
+          <li><a class="lead" href="#">Python</a></li>
+          <li><a class="lead" href="#">Java</a></li>
+          <li><a class="lead" href="#">设计</a></li>
+          <li><a class="lead" href="#">PHP</a></li>
+          <li><a class="lead" href="#">网络攻防</a></li>
+          <li><a class="lead" href="#">资源站点</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- /container-main -->
+    
 
 
-</body>
+    <!-- 依赖库 -->
+    <!-- bootstap 的所有组件都是依赖jquery的 -->
+    <script src="lib/jquery/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <!-- /依赖库 -->
+  </body>
 </html>
