@@ -1,3 +1,10 @@
+body{
+	/* color: red;
+	font-size: 10px !important; */
+}
+.about-main p{
+	font-size: 1.2em;
+}
 .jumbotron-main{
 	margin-top:50px;
 	/* height: 300px;
