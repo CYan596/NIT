@@ -1,4 +1,5 @@
 body {
+  height: 5000px;
   padding-top: 50px;
   /* background-color: #935d8c; */
   background-color: #fff;
@@ -33,6 +34,8 @@ body {
   background-color: #fff;
 }
 #logo{
+  /* transition: all 1s; */
+  opacity: 0;
   width: 100px;
 }
 #nav-items{
@@ -129,6 +132,17 @@ body {
   background-repeat:no-repeat;
   background-position:bottom center;
 }
+
+.mark-t{
+  
+}
+.mark-t#logo{
+    transition: all 2.5s ease-in-out 0.1s;
+    /* margin: 0 10px; */
+    opacity: 1;
+}
+
+
 
 @media (min-width: 0px) {
   #container-main{

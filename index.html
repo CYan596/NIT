@@ -33,7 +33,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Area</a>
+          <a class="navbar-brand" href="index.html">清和</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -50,8 +50,8 @@
     <div class="container" id="container-top">
       <div class="starter-template">
         <img id="logo" class="img-responsive center-block logo" src="img/studentIcon.svg" alt="icon">
-        <h1 class="">Area 资源导航</h1>
-        <p class="lead">不在寻找上浪费时间。<br>高效的学习，生活，工作。</p>
+        <h1 class="">资源导航</h1>
+        <p class="lead">为大家做了一些微小的工作</p>
       </div>
     </div>
     <!-- /container-top -->
@@ -132,7 +132,6 @@
     </div>
     <!-- /container-main -->
 
-    
 
 
     <!-- 依赖库 -->
@@ -141,5 +140,24 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="lib/bootstrap/js/bootstrap.js"></script>
     <!-- /依赖库 -->
+
+
+    <script>
+      $(window).load(function () {
+        var logo=$("#logo");
+        if ((logo.offset().top-$(window).scrollTop()>0)&&(logo.offset().top-$(window).scrollTop()<$(window).height())) {
+          logo.addClass("mark-t");
+          }
+        $(window).scroll(function(){
+          console.log(11);
+          if ((logo.offset().top-$(window).scrollTop()>0)&&(logo.offset().top-$(window).scrollTop()<$(window).height())) {
+          logo.addClass("mark-t");
+          }else{
+            logo.removeClass("mark-t");
+          }
+      });
+       
+      });
+    </script>
   </body>
 </html>
